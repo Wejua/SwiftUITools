@@ -9,9 +9,14 @@ import Foundation
 
 public class AdministrativeDivisions {
     public static let provinces: [Province] = {
-        let bundle = Bundle(for: AdministrativeDivisions.self)
-        let fileUrl = bundle.url(forResource: "adc", withExtension: "json")
-        let data = try! Data(contentsOf: fileUrl!)
+        let classObject = AdministrativeDivisions.self
+        let bundle = Bundle(for: classObject) //Mach-o Type为静态库时, 和Bundle.main是一个地址
+        
+//        let frameworkName = String(reflecting: classObject).split(separator: ".")[0]
+//        let fileUrl = URL(fileURLWithPath:bundle.bundlePath).deletingLastPathComponent().appending(component: "\(frameworkName).framework/adc.json")
+        
+        let fileUrl = bundle.url(forResource: "adc", withExtension: "json")!
+        let data = try! Data(contentsOf: fileUrl)
         let provinces = try! JSONDecoder().decode([Province].self, from: data)
         return provinces
     }()
