@@ -41,8 +41,8 @@
 		488974B72A122239003F79E0 /* AudioRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488974932A122237003F79E0 /* AudioRecording.swift */; };
 		488974B82A122239003F79E0 /* RefreshableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488974942A122237003F79E0 /* RefreshableScrollView.swift */; };
 		48A396002A2B4EF100DB5316 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A395FF2A2B4EF100DB5316 /* SwiftyJSON.swift */; };
-		48D48A332AC484810077CC54 /* CPUAndMemoryUsage.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D48A312AC484810077CC54 /* CPUAndMemoryUsage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48D48A342AC484810077CC54 /* CPUAndMemoryUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D48A322AC484810077CC54 /* CPUAndMemoryUsage.m */; };
+		48CF1AA32AF18A7100816D5B /* CPUAndMemoryUsage.h in Headers */ = {isa = PBXBuildFile; fileRef = 48CF1AA12AF18A7100816D5B /* CPUAndMemoryUsage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48CF1AA42AF18A7100816D5B /* CPUAndMemoryUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF1AA22AF18A7100816D5B /* CPUAndMemoryUsage.m */; };
 		48EDA4CD2A28516F00F361EF /* adc.json in Resources */ = {isa = PBXBuildFile; fileRef = 48EDA4CC2A28516F00F361EF /* adc.json */; };
 		48FFBDC02A1242B20075E3EF /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFBDBF2A1242B20075E3EF /* Widget.swift */; };
 /* End PBXBuildFile section */
@@ -83,8 +83,8 @@
 		488974932A122237003F79E0 /* AudioRecording.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioRecording.swift; sourceTree = "<group>"; };
 		488974942A122237003F79E0 /* RefreshableScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshableScrollView.swift; sourceTree = "<group>"; };
 		48A395FF2A2B4EF100DB5316 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		48D48A312AC484810077CC54 /* CPUAndMemoryUsage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPUAndMemoryUsage.h; path = "../../../../../../../HotWidget开发/Widget/HotWidget/HotWidget/CPUAndMemoryUsage.h"; sourceTree = "<group>"; };
-		48D48A322AC484810077CC54 /* CPUAndMemoryUsage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPUAndMemoryUsage.m; path = "../../../../../../../HotWidget开发/Widget/HotWidget/HotWidget/CPUAndMemoryUsage.m"; sourceTree = "<group>"; };
+		48CF1AA12AF18A7100816D5B /* CPUAndMemoryUsage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPUAndMemoryUsage.h; sourceTree = "<group>"; };
+		48CF1AA22AF18A7100816D5B /* CPUAndMemoryUsage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPUAndMemoryUsage.m; sourceTree = "<group>"; };
 		48EDA4CC2A28516F00F361EF /* adc.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adc.json; sourceTree = "<group>"; };
 		48FFBDBF2A1242B20075E3EF /* Widget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,8 +170,8 @@
 				488974942A122237003F79E0 /* RefreshableScrollView.swift */,
 				48532C012A1B194E009C460B /* WrappingHStack.swift */,
 				481F11AB2A25AC2000EED071 /* AuthorizationManager.swift */,
-				48D48A312AC484810077CC54 /* CPUAndMemoryUsage.h */,
-				48D48A322AC484810077CC54 /* CPUAndMemoryUsage.m */,
+				48CF1AA12AF18A7100816D5B /* CPUAndMemoryUsage.h */,
+				48CF1AA22AF18A7100816D5B /* CPUAndMemoryUsage.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -192,8 +192,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48CF1AA32AF18A7100816D5B /* CPUAndMemoryUsage.h in Headers */,
 				4889746A2A12208E003F79E0 /* SwiftUITools.h in Headers */,
-				48D48A332AC484810077CC54 /* CPUAndMemoryUsage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +229,7 @@
 				TargetAttributes = {
 					488974652A12208D003F79E0 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -271,6 +272,7 @@
 				488974A22A122238003F79E0 /* VideoPlayer.swift in Sources */,
 				488974982A122238003F79E0 /* iDummyCursor.swift in Sources */,
 				48A396002A2B4EF100DB5316 /* SwiftyJSON.swift in Sources */,
+				48CF1AA42AF18A7100816D5B /* CPUAndMemoryUsage.m in Sources */,
 				488974B42A122238003F79E0 /* Gesture.swift in Sources */,
 				48532C022A1B194E009C460B /* WrappingHStack.swift in Sources */,
 				488974B12A122238003F79E0 /* LocationManager.swift in Sources */,
@@ -300,7 +302,6 @@
 				488974A32A122238003F79E0 /* ImagePicker.swift in Sources */,
 				488974A12A122238003F79E0 /* StringExtensions.swift in Sources */,
 				488974B82A122239003F79E0 /* RefreshableScrollView.swift in Sources */,
-				48D48A342AC484810077CC54 /* CPUAndMemoryUsage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +433,7 @@
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -455,6 +457,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -465,6 +468,7 @@
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
